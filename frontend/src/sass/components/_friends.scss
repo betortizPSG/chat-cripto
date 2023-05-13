@@ -1,0 +1,137 @@
+.friends {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 225, 225); // Cor de fundo amigo
+    height: 100%;
+    overflow-y: auto;
+    scroll-snap-align: 20px;
+    
+    h4{
+        white-space: nowrap;
+    }
+    &::-webkit-scrollbar {
+        width: 5px;
+      }
+       
+       &::-webkit-scrollbar-track {
+        box-shadow: inset 
+      } 
+       
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(206, 204, 214);
+        outline: 0px solid rgb(206, 204, 214);
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(186, 185, 192);
+        outline: 0px solid rgb(1, 1, 3);
+      }
+
+    .hover-friend.active {
+        background-color: var(--search-bg); // CSS cor da borda amigo
+       
+    }
+
+    .hover-friend {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(34, 204, 170, 0.623); // Cor do hover friend
+        }
+
+        .friend {
+            display: flex;
+            word-wrap: break-word;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 0;
+
+            .friend-image {
+                .image {
+                    margin-right: 8px;
+                    position: relative;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        border: 1px solid var(--text-color);
+                    }
+
+                    .active_icon {
+                        position: absolute;
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        background-color: rgb(43, 228, 43);
+                        right: -2px;
+                        bottom: 6px;
+                        border: 1px solid rgb(255, 255, 255);
+                    }
+                }
+            }
+
+            .friend-name-seen {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 1rem;
+
+                .friend-name {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    h4.unseen_message {
+                        font-weight: 700 !important;
+                    }
+
+                    h4 {
+                        color: black; // Cor do nome do amigo
+                        font-weight: 300;
+                        font-size: 23px;
+                    }
+
+                    .msg-time {
+                        span.unseen_message {
+                            font-weight: 700 !important;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            color: black; // CSS cor da ultima msg enviado ao amigo
+                        }
+                    }
+                }
+
+                .seen-unseen-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                    }
+
+                    .unseen,
+                    .delivared {
+                        color: var(--text-color);
+                    }
+
+                    .seen-icon {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: #03f15f;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.userProfile {
+  .icon-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-perfil {
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .offcanvas-body {
+    height: 100vh;
+  }
+
+  .offcanvas-header {
+    color: var(--text-color);
+    justify-content: space-between;
+
+    .btn-close {
+      opacity: 100;
+    }
+  }
+  .btn-perfil {
+    color: var(--text-color);
+  }
+
+  .btn-salvar {
+    background-color: #2ca7;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 25px;
+    /* display: none; */
+  }
+
+  .content-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  .btn-image-1 {
+    display: none;
+  }
+
+  .label-image{
+    background-color: rgb(34, 136, 204);
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-right: 65px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .btn-image {
+    background-color: rgba(34, 136, 204, 0.467);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.363);
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+}

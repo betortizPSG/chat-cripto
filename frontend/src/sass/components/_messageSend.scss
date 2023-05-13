@@ -1,0 +1,105 @@
+.message-send-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .file {
+        display: flex;
+        padding: 8px;
+        font-size: 30px;
+        cursor: pointer;
+        color:var(--icon-color);
+      
+
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+            cursor: pointer;
+            opacity: 100%;
+            color:var(--icon-color);
+        }
+      
+        #pic {
+            display: none;
+        }
+
+    }
+
+    .message-type {
+        display: flex;
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        background-color: #bbb7b7; 
+        border-radius: 10px;
+        border: none;
+        align-self: center;
+
+        .form-control {
+            width: 100%;
+            font-size: 18px; 
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: rgb(38 40 46 / 53%);
+            overflow: auto;
+            resize: none;
+            border: none;
+
+            &::placeholder {
+                color: #0d0d0e;
+            }
+
+
+        }
+
+        label {
+            font-size: 20px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        textarea::-webkit-scrollbar {
+            width: 0px;
+
+        }
+    }
+
+    .emoji-section {
+        width: 200px;
+        background: #0e131d;
+        position: absolute;
+        right: 60px;
+        padding: 6px;
+        bottom: 50px;
+        border-radius: 8px;
+        border-bottom-right-radius: 0px;
+        display: none;
+
+        .emoji {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 4px;
+
+            span {
+                cursor: pointer;
+            }
+        }
+    }
+
+    #emoji {
+        display: none;
+    }
+
+    #emoji:checked~.emoji-section {
+        display: block;
+    }
+}
+
+#sentinela {
+    width: 100%;
+    height: 10px;
+    background-color: red;
+}

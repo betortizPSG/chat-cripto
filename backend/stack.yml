@@ -1,0 +1,34 @@
+version: "3.6"
+services:
+  backend:
+    image: harbor.psgtecnologiaaplicada.com.br/academia/chat-cripto-back:${VERSION_IMG}
+    networks:
+      - traefik-public
+    environment:
+      PATH_URL: ${PATH_URL}
+      COOKIE_EXP: ${COOKIE_EXP}
+      DATABASE_URL: ${DATABASE_URL}
+      PORT: ${PORT}
+      SECRET: ${SECRET}
+      TOKEN_EXP: ${TOKEN_EXP}
+    volumes:
+      - /NFS/HOM/chat-cripto/image:/usr/src/app/public/image
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+      replicas: 1
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.api-chat-cripto-academia.rule=Host(`api.chat-cripto.psg.org`)"
+        - "traefik.http.routers.api-chat-cripto-academia.service=api-chat-cripto-academia"
+        - "traefik.http.routers.api-chat-cripto-academia.entrypoints=web"
+        - "traefik.http.services.api-chat-cripto-academia.loadbalancer.server.port=5000"
+    dns_search:
+      - 10.100.1.11
+      - 10.100.1.12
+    
+networks:
+  traefik-public:
+    external: true

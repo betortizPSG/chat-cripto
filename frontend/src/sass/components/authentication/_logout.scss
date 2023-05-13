@@ -1,0 +1,41 @@
+.body {
+    text-align: center;
+}
+
+.darkmode {
+    margin-top: 50px;
+}
+
+.on,
+.off {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-logout {
+    justify-self: end;
+    align-content: flex-end;
+
+    text-align: center;
+    background-color: #fa8a7b;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.4s;
+    margin-top: 0px;
+}
+
+.btn-logout:hover {
+    background-color: #d11b03;
+}
+
+.title-dark-mode {
+    color: var(--text-color);
+}
+
+
+

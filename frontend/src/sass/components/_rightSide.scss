@@ -1,0 +1,159 @@
+.msg-max {
+
+
+    .right-side {
+        height: 100%;
+    }
+    .alinhamento {
+
+        .rs-max {
+            
+            transition: all .5s;
+
+            .message-send-show {
+                height: 100vh;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+             
+
+                .header {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: rgb(179 180 183 / 53%);
+                    padding: 15px;
+                    gap:1rem;
+                    padding-right: 20px;
+                    flex-wrap: wrap;
+
+                  
+                    .botao {
+                        background-color: #afacac; 
+                        font-size: 22px;
+                        margin-right: 23px;
+                        margin-left: 15px;
+                        box-shadow:none;
+                        outline: none;
+                        border-color: rgb(94, 89, 89);
+                        
+                        
+                      }
+
+                   
+                      .botao:checked {
+                        background-color: #000; 
+                        border-color: rgb(94, 89, 89);
+                        
+                      }
+
+                    .tema{
+                        width: 25px;
+                        height: 30px;
+                       
+                    }
+
+                    .image-name {
+                        display: flex;
+                        flex-grow: 3;
+
+                        .image {
+                            position: relative;
+                            width: 60px;
+                            height: 60px;
+
+                            img {
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                            }
+
+                            .active-icon {
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                background-color: rgb(28, 212, 28);
+                                right: 0px;
+                                bottom: 0pc;
+                            }
+                        }
+
+                        .name {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        
+
+                            h5, h4 {
+                                padding-left: 10px;
+                                color: var(--text-color);
+                                font-size: 23px;
+                            }
+                        }
+                    }
+
+                    .icons {
+                        display: flex;
+
+
+                        .icon {
+                            height: 35px;
+                            width: 35px;
+                            border-radius: 50%;
+                            margin-left: 8px;
+                            border-radius: 24px;
+                            color: var(--icon-color);
+                            cursor: pointer;
+                            background-color: var(--icon-bg-color);
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            
+
+                            label {
+                                display: flex;
+                                margin-bottom: 0px;
+                                cursor: pointer;
+                                color: var(--icon-color);
+                                ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    #dot {
+        display: none;
+    }
+
+    #dot:checked~.alinhamento .rs-min {
+        display: none;
+    }
+
+    #dot:checked~.alinhamento .rs-max {
+        width: 100%;
+    }
+
+    #dot:checked~.alinhamento .rs-max .message-show .my-message .my-text {
+        width: 500px;
+    }
+
+    #dot:checked~.alinhamento .rs-max .message-show .friend-message .friend-text {
+        width: 500px;
+    }
+}
+
+.none {
+    opacity: 0;
+}
+
+.blur {
+    filter: blur(14px);
+}

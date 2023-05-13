@@ -1,0 +1,81 @@
+.forgot-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+   
+  }
+
+  .card-forgot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: #2ca999;
+    height: 8vh;
+
+
+  }
+  
+  .forgot-heading {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .forgot-formgroup { 
+    margin-bottom: 1em;
+
+
+  }
+
+  ::placeholder{
+    color: #2ca999;
+    font-size: 15px;
+    
+  }
+  
+  .forgot-label {
+    display: block;
+    margin-bottom: 0.5em;
+    color:black;
+  }
+  
+  .forgot-input {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 0.25em;
+    border: 1px solid #585858;
+    background: rgba(105, 74, 76, 0.5215686275);
+
+    &:focus{   background-color: white;
+    }  
+     
+  }
+ 
+  .forgot-button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color:rgba(34, 204, 170, 0.4666666667);
+    
+    color: #14e7cb;
+    border-radius: 0.25em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .forgot-button:hover {
+    background-color: #2ca999;
+
+  }
+
+  body{
+    background-color: #2ca999;
+  }
+  
+  
+  

@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #000000  
+}
+
+:root {
+  --text-white: #fff;
+  --bg-color: #ffffff;
+  --text-color: #060507; // Cor dos textos da pagina de mensagem
+  --icon-bg-color: #fff; // Cor dos icones da pagina de mensagem
+  --icon-color: #080505; // Cor do icone da pagina de mensagem
+  --search-bg: #868e991a;
+  --active-color: #5ad539;
+  --border-color: #d8d6d6; //Cor das bordas
+  --message-icon-color: #0099ff;
+  --friend-message-bg: #e5e5e5;
+  --my-message-bg: #0084ff;
+  --my-message-color: #fff;
+  --friend-message-color: #050505;
+  --image-border-color: rgb(155, 153, 153);
+  --active-icon-color: #5ad539;
+  --hover-color: #bcbcc091;
+  --text-black: var(--text-black);
+  --theme-color-drop-white: #ffffff;
+  --friend-message-ballon: rgb(194, 181, 181);
+  --bg-user-hero: #c1c1c1;
+  --bg-user-dropup: #c1c1c1;
+  --bg-user-dropup-hover: hsl(0, 0%, 70%);
+
+}
+
+body {
+  background-color: #f0f2f5bf;
+  font-family: "Roboto", sans-serif;
+}
+
+.messenger.theme {
+  background-color: #171F2E;
+  --text-color: #fff;
+  --bg-color: #1255f1f0;
+  --border-color: #000000;
+  --icon-bg-color: #000000;
+  --active-color: #2b335591;
+  --hover-color: #323a5c91;
+  --friend-message-bg: #28324ed9;
+  --my-message-bg: #28324ed9;
+  --search-bg: #15162559;
+  --text-white: #fff;
+  --text-dark: #404040;
+  --icon-color: #fff;
+  --message-icon-color: #fff;
+  --my-message-color: #fff;
+  --friend-message-color: rgb(245, 241, 241);
+  --active-icon-color: #5ad539;
+  --image-border-color: #fff;
+  --text-black: rgb(0, 0, 0);
+  --friend-message-ballon: #eaf1f0;
+  --bg-user-hero: #b3b4b787;
+  --bg-user-dropup: #6a6e77;
+  --bg-user-dropup-hover: hsl(222, 6%, 40%);
+
+  .friends {
+    background-color: #4e505754;
+  }
+
+  .message-show .my-message .time,
+  .message-show .friend-message .time {
+    color: white;
+  }
+
+  .friends .hover-friend .friend .friend-name-seen .friend-name h4 {
+    color: white;
+    font-weight: bold;
+  }
+
+  .friends .hover-friend .friend .friend-name-seen .friend-name .msg-time span {
+    color: white;
+
+  }
+
+  .image-message-time .time,
+  .image-message .time {
+    color: white;
+  }
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
